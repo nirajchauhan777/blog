@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+     body {
+      margin: 0;
+      padding: 0;
+      background-color: #F1F8E9;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    nav {
+      background-color: #2E7D32;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 8px 15px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      border: 2px solid white;
+      border-radius: 20px;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+      background-color: white;
+      border-radius: 50px;
+      overflow: hidden;
+      padding-left: 10px;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .search-box i {
+      font-size: 18px;
+      color: #2E7D32;
+      margin-right: 8px;
+    }
+
+    .side-bar {
+      background-color: #126e25;
+      height: 100vh;
+      padding: 20px;
+      width: 300px;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      overflow-y: auto;
+    }
+
+    .column-nev {
+      list-style: none;
+      padding: 0;
+    }
+
+    .column-nev li {
+      margin-bottom: 15px;
+    }
+
+    .column-nev li a {
+      display: block;
+      background-color: #AED581;
+      text-decoration: none;
+      text-align: center;
+      color: #1B5E20;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .column-nev li a:hover {
+      background-color: #8BC34A;
+      box-shadow: 2px 2px 5px #2E7D32;
+      color: white;
+    }
+
+    .main-content {
+      margin-top: 80px;
+      margin-left: 320px;
+      height: calc(100vh - 80px);
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .outliry {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .blog-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .blog-box {
+      width: calc(50% - 10px);
+      background-color: #ebffd3;
+      box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .blog-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .blog-box h1,
+    .blog-box p {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .blog-box {
+        width: 100%;
+      }
+
+      .nav-container,
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+
+      .side-bar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-container">
+      <div class="search-box">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search nature..." />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="side-bar">
+    <ul class="column-nev">
+      <li><a href="blog-pag.html">Home</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#">Nature</a></li>
+      <li><a href="#">Sign In</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="outliry">
+      <h2>Welcome to the Nature Blog</h2>
+      <p>Explore reflections, landscapes, healing, and harmony with the natural world.</p>
+    </div>
+
+    <div class="blog-row">
+      <!-- Blog 1 -->
+      <div class="blog-box">
+        <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/04/1-Hart_BearCamp-58-1-1080x675.jpeg" />
+        <h1>Connection</h1>
+        <p>Humans need emotional bonds with nature to protect it.</p>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="blog-box">
+        <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2023/05/MSC_1295_copy-1-1080x675.jpg" />
+        <h1>The Animated World</h1>
+        <p>Wind breathes life into landscapes and awakens trees.</p>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="blog-box">
+        <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2025/06/Fire-Landscape_jkgabbert_AdobeStock-fin_Web-1080x675.jpg" />
+        <h1>Forest Bathing</h1>
+        <p>Spending time in forests reduces anxiety and stress.</p>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="blog-box">
+        <img src="https://natureinmind.ie/wp-content/uploads/2016/12/16-12-23-Tree-Stephens-Green-600x400.jpg" />
+        <h1>Healing Waters</h1>
+        <p>Waterfallshis feeling has been with me in one way or another for most of my adult life. Now, as I sit in my favourite place under this old tree I can feel it again. The days are getting shorter and colder. Soon the trees will be bare. I can’t quite put my finger on it but it feels like the sands of time are running out. There is a hollow feeling in my chest. calm the soul and refresh the senses.</p>
+      </div>
+
+      <!-- Blog 5 -->
+      <div class="blog-box">
+        <img src="https://natureinmind.ie/wp-content/uploads/2016/12/6-600x400.jpg" />
+        <h1>Autumn Gold</h1>
+        <p>Fweek in the office beckons. The same feeling that comes when the long awaited annual two week holiday is almost over. I remember the exact same feeling a few years ago when I was travelling – I was sitting in a small coffee shop in Bali when I realised that I had passed the half way point of my trip. It hit me hard then. The party would soon be over. The glass wasalling leaves teach us to embrace change gracefully.</p>
+      </div>
+
+      <!-- Blog 6 -->
+      <div class="blog-box">
+        <img src="https://natureinmind.ie/wp-content/uploads/2016/12/16-12-23-Bundoran-Sunset-600x400.jpg" />
+        <h1>learned how to meditate</h1>
+        <p>Around the time I first learned how to meditate, something amazing happened to me. It happened one day, quite spontaneously.  I was working as a lawyer at the time and I used to walk down a little lane way to th peace.</p>
+      </div>
+      <div class="blog-box">
+        <img src="https://natureinmind.ie/wp-content/uploads/2017/09/IMG_2644-600x400.jpg" />
+        <h1>ReflectIn order</h1>
+        <p>ReflectIn order for any plant to grow and flourish to its full potential, it needs the right conditions. The soil is all important. Everything grows in the soil. If the soil is good and you have the right amount of sunshine and water everything takes care of itself. Nature follows its own course. We don’t…ion on still water invites inner peace.</p>
+      </div>
+      <div class="blog-box">
+        <img src="https://natureinmind.ie/wp-content/uploads/2016/12/16-12-23-Wildflowers-600x400.jpg" />
+        <h1>RIn order for any </h1>
+        <p>RIn order for any plant to grow and flourish to its full potential, it needs the right conditions. The soil is all important. Everything grows in the soil. If the soil is good and you have the right amount of sunshine and water everything takes care of itself. Nature follows its own course. We don’t…eflection on still water invites inner peace.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
